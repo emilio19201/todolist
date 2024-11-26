@@ -3,7 +3,7 @@ import { model, Schema } from "mongoose";
 interface IUser {
   name: string;
   email: string;
-  pasword: string;
+  password: string;
   roll: string;
 }
 
@@ -17,7 +17,7 @@ const UserSchema = new Schema<IUser>(
       type: String,
       required: true,
     },
-    pasword: {
+    password: {
       type: String,
       require: true,
     },
